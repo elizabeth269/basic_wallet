@@ -1,6 +1,6 @@
 require("@nomicfoundation/hardhat-toolbox");
 require("hardhat-gas-reporter");
-require("@nomiclabs/hardhat-verify");
+require("@nomicfoundation/hardhat-verify");
 require("dotenv").config();
 require("solidity-coverage");
 require("hardhat-deploy");
@@ -45,7 +45,6 @@ module.exports = {
   },
   etherscan: {
     apiKey: ETHERSCAN_API_KEY,
-    // customChains: [], // uncomment this line if you are getting a TypeError: customChains is not iterable
   },
   gasReporter: {
     enabled: true,
